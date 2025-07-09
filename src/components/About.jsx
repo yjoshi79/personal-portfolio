@@ -64,7 +64,7 @@ const About = () => {
               I'm a passionate Software Engineer with a keen interest in creating 
               innovative digital solutions that solve real-world problems. My journey 
               in technology began with a fascination for how complex systems can be 
-              simplified through elegant code and intuitive design.
+              simplified through elegant code and intuitive designs.
             </p>
             <p>
               With a strong background in web development, I specialize in building 
