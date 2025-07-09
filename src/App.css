@@ -1,0 +1,47 @@
+@import './styles/GlobalAnimations.css';
+
+:root {
+  --bg-primary: #e6edff;
+  --text-primary: #2c3e50;
+  --text-secondary: #34495e;
+  --accent-color: #4a6cf7;
+  --accent-light: #e6edff;
+  --gradient-primary: linear-gradient(45deg, #4a6cf7, #9b51e0);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure the import is correct and the file exists */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.btn {
+  transition: 
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.nav-item {
+  @extend .nav-item;
+}
+
+/* Responsive base styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,245 @@
+.about-section {
+  background-color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+}
+
+.about-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.about-text,
+.skills-category,
+.highlight-item {
+  position: relative;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(74, 108, 247, 0.1);
+  padding: 2rem;
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.about-text::before,
+.skills-category::before,
+.highlight-item::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center, 
+    rgba(74, 108, 247, 0.1) 0%, 
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.about-text:hover,
+.skills-category:hover,
+.highlight-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(74, 108, 247, 0.2);
+  background-color: rgba(74, 108, 247, 0.02);
+}
+
+.about-text:hover::before,
+.skills-category:hover::before,
+.highlight-item:hover::before {
+  opacity: 1;
+}
+
+.about-text:hover .skill-tag,
+.skills-category:hover .skill-tag,
+.highlight-item:hover .skill-tag {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.skill-tag {
+  transition: 
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.skill-tag:hover {
+  transform: scale(1.1);
+  background-color: rgba(74, 108, 247, 0.15);
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.skills-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.skills-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skills-category {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(74, 108, 247, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skills-category:hover {
+  transform: translateY(-5px);
+}
+
+.skills-category h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  background-color: var(--accent-light);
+  color: var(--accent-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: default;
+  transition: background-color 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: rgba(74, 108, 247, 0.1);
+}
+
+.about-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.highlight-item {
+  flex: 1;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(74, 108, 247, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+}
+
+.highlight-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.highlight-item p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .about-content,
+  .about-highlights {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text,
+  .skills-section,
+  .highlight-item {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .about-highlights {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .about-text,
+  .highlight-item {
+    padding: 1.5rem;
+  }
+} 

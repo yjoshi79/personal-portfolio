@@ -1,0 +1,121 @@
+/* Global Interactive Animations */
+.interactive-block {
+  position: relative;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(74, 108, 247, 0.1);
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.interactive-block::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center, 
+    rgba(74, 108, 247, 0.1) 0%, 
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.interactive-block:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(74, 108, 247, 0.2);
+  background-color: rgba(74, 108, 247, 0.02);
+}
+
+.interactive-block:hover::before {
+  opacity: 1;
+}
+
+/* Button Animations */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg, 
+    transparent, 
+    rgba(255,255,255,0.3), 
+    transparent
+  );
+  transition: all 0.6s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(74, 108, 247, 0.2);
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+/* Skill Tag Animations */
+.skill-tag {
+  display: inline-block;
+  transition: 
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  will-change: transform, background-color;
+}
+
+.skill-tag:hover {
+  transform: scale(1.1);
+  background-color: rgba(74, 108, 247, 0.15);
+}
+
+/* Navbar Item Animations */
+.nav-item {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover {
+  color: var(--accent-color);
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .interactive-block:hover {
+    transform: translateY(-5px) scale(1.01);
+  }
+} 
