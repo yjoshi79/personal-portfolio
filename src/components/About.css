@@ -3,8 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 4rem 2rem;
+  min-height: 70vh;
+  padding: 2.5rem 1rem;
 }
 
 .about-container {
@@ -28,9 +28,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 1.5rem;
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .about-text,
@@ -40,7 +40,7 @@
   background: white;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(74, 108, 247, 0.1);
-  padding: 2rem;
+  padding: 1.2rem;
   transition: 
     transform 0.3s ease,
     box-shadow 0.3s ease,
@@ -172,9 +172,9 @@
 .about-highlights {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 1.5rem;
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .highlight-item {
@@ -221,7 +221,7 @@
 
 @media (max-width: 768px) {
   .about-section {
-    padding: 2rem 1rem;
+    padding: 1.2rem 0.5rem;
   }
 
   .about-section h2 {
@@ -229,17 +229,17 @@
   }
 
   .about-content {
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1rem;
+    margin-top: 1rem;
   }
 
   .about-highlights {
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1rem;
+    margin-top: 1rem;
   }
 
   .about-text,
   .highlight-item {
-    padding: 1.5rem;
+    padding: 1rem;
   }
-} 
+}
