@@ -95,8 +95,11 @@ const Hero = () => {
           Software Engineer & Web Developer
         </motion.h2>
         <motion.p variants={itemVariants}>
-          Crafting innovative digital solutions with a passion for creating 
-          intuitive and performant web experiences.
+          Yogesh Chandra
+          Software Engineer & Web Developer
+          🛠 MERN Stack | 💻 AI Enthusiast | 🧠 Problem Solver
+
+          Crafting innovative digital solutions with a passion for building intuitive and performant experiences.
         </motion.p>
         <motion.div 
           className="hero-cta"

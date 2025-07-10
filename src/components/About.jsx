@@ -4,8 +4,20 @@ import './About.css';
 
 const skillsData = [
   { category: 'Frontend', skills: ['React', 'Vue.js', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS'] },
-  { category: 'Backend', skills: ['Node.js', 'Express', 'Python', 'Django', 'MongoDB', 'PostgreSQL'] },
-  { category: 'Tools', skills: ['Git', 'Docker', 'Webpack', 'Vite', 'CI/CD', 'Figma'] }
+  {
+    category: 'Tools',
+    skills: [
+      'Git',
+      'GitHub',
+      'Vite',
+      'VS Code',
+      'Chrome DevTools',
+      'Figma',
+      'Firebase Hosting',
+      'Netlify',
+      'Vercel'
+    ]
+  }
 ];
 
 const About = () => {
@@ -145,7 +157,7 @@ const About = () => {
           >
             <h3>Education</h3>
             <p>Bachelor of Technology in Computer Science</p>
-            <p>Specialized in Web Technologies and Software Engineering</p>
+            <p>I am currently pursuing a Bachelor of Technology in Computer Science and Engineering (2022–2026), where I’ve developed a strong foundation in programming, data structures, algorithms, and software development. My coursework, combined with hands-on project experience, has helped me build skills in frontend development, problem-solving, and real-world application of computer science concepts.</p>
           </motion.div>
           <motion.div 
             className="highlight-item"
@@ -166,8 +178,9 @@ const About = () => {
             }}
           >
             <h3>Experience</h3>
-            <p>3+ Years of Professional Software Development</p>
-            <p>Full-stack Web Development and DevOps</p>
+            <p>
+              I have been actively involved in web development for the past two years, building projects using HTML, CSS, JavaScript, and React. During this time, I’ve focused on creating responsive and user-friendly interfaces, gaining hands-on experience with component-based architecture, state management, and routing. I’m comfortable working with modern tools like Vite, Git, and GitHub, and I continuously strive to improve my frontend development skills by following best practices and exploring new technologies.
+            </p>
           </motion.div>
         </motion.div>
       </motion.div>

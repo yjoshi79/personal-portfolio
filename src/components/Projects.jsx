@@ -4,19 +4,21 @@ import '../styles/Projects.css';
 
 const projectsData = [
   {
-    title: 'Project 1',
-    description: 'Detailed project description goes here.',
-    technologies: ['React', 'Node.js', 'MongoDB'],
-    githubLink: '#',
-    liveLink: '#'
-  },
+    title: 'AI Travel Planner',
+    description: 'A frontend-only web application that generates mock travel itineraries based on user input like destination, dates, budget, and interests. Built using React and Vite, with Framer Motion for smooth animations and a fully responsive layout.',
+    technologies: ['React', 'Vite', 'Framer Motion'],
+    githubLink: 'https://github.com/yjoshi79/ai-travel-planner', // replace with your actual repo link
+    liveLink: 'https://ai-travel-planner.vercel.app/' // replace with your deployed link
+  }
+  ,
   {
-    title: 'Project 2',
-    description: 'Another project description.',
-    technologies: ['Vue.js', 'Express', 'PostgreSQL'],
-    githubLink: '#',
-    liveLink: '#'
-  },
+    title: 'Algoviz - CPU & Disk Scheduler',
+    description: 'An interactive visualizer that simulates various CPU scheduling (FCFS, SJF, Round Robin) and disk scheduling algorithms (SCAN, LOOK, etc.). Built to help students understand how these algorithms work through real-time animations and charts.',
+    technologies: ['React', 'Chart.js', 'Framer Motion'],
+    githubLink: 'https://github.com/yjoshi79/algoviz-scheduler',
+    liveLink: 'https://harshitpbl.netlify.app/'
+  }
+  ,
   {
     title: 'Project 3',
     description: 'Third project description.',

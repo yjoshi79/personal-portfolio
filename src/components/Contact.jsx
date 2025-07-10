@@ -178,11 +178,10 @@ const Contact = () => {
         <motion.div className="contact-info" variants={itemVariants}>
           <h3>Contact Information</h3>
           <div className="contact-details">
-            <p>📧 youremail@example.com</p>
-            <p>📱 +1 (123) 456-7890</p>
+            <p>📧yogeshjoshi73090@gmail.com</p>
             <div className="social-links">
               <motion.a 
-                href="#" 
+                href="https://www.linkedin.com/in/yogesh-chandra-930859218/" 
                 className="social-icon"
                 whileHover={{ 
                   scale: 1.2,
@@ -191,9 +190,11 @@ const Contact = () => {
                 }}
               >
                 LinkedIn
+            
               </motion.a>
+    
               <motion.a 
-                href="#" 
+                href="https://github.com/yjoshi79" 
                 className="social-icon"
                 whileHover={{ 
                   scale: 1.2,
